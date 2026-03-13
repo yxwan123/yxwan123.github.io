@@ -1,103 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yuxuan Wan – PhD Student at CUHK, researching LLM coding agents, deep research agents, and game AI.">
+  <title>Yuxuan Wan | PhD Student @ CUHK</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!-- saved from url=(0031)https://jarviswang94.github.io/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="description" content="Wenxuan Wang&#39;s home page">
-<link rel="stylesheet" href="./asset/jemdoc.css" type="text/css">
-<title>Yuxuan Wan's Homepage @ The Chinese University of Hong Kong</title>
+    :root {
+      --bg:        #0d1117;
+      --bg2:       #161b22;
+      --bg3:       #21262d;
+      --border:    #30363d;
+      --accent:    #58a6ff;
+      --accent2:   #bc8cff;
+      --green:     #3fb950;
+      --text:      #e6edf3;
+      --muted:     #8b949e;
+      --radius:    12px;
+    }
 
-</head><body data-new-gr-c-s-check-loaded="14.1149.0" data-gr-ext-installed="">
-<div id="layout-content" style="margin-top:25px">
+    html { scroll-behavior: smooth; }
 
-<table>
-    <tbody>
-        <tr>
-            <td width="670">
-                <div id="toptitle">
-                    <h1>Yuxuan Wan &nbsp; </h1>
-                </div>
-                <h3>Ph.D. Student</h3>
-                <p>
-                    ARISE Lab<br>
-                    Department of Computer Science and Engineering<br>
-                    The Chinese University of Hong Kong <br>
-                    Hong Kong SAR, China.<br>
-                    <br>
-                    E-mail: yxwan[AT]link.cuhk.edu.hk<br>
-                    <a href="https://yxwan123.github.io/asset/cv.pdf">[Curriculum Vitae]</a><a href="https://scholar.google.com/citations?user=gnJLyQcAAAAJ&hl=en">[Google Scholar]</a>
-                </p>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
 
-            </td>
-            <td>
-                <img src="./asset/photo.jpg" border="0" width="200">
-            </td>
-        </tr>
-    </tbody>
-</table>
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-<h2>Biography</h2>
-<p>
-    I am a third-year Ph.D. student at the Department of Computer Science and Engineering at the Chinese University of Hong Kong (CUHK), starting from Aug. 2023. I feel lucky to be advised by Prof. <a href="https://www.cse.cuhk.edu.hk/lyu/home">Michael R. Lyu </a>. I received my B.E. degree from the Department of Computer Science and Engineering, The Chinese University of Hong Kong, in 2023.
-</p>
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13,17,23,.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      height: 52px;
+    }
+    .nav-logo { font-weight: 700; font-size: 15px; color: var(--text); letter-spacing: .3px; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--muted); font-size: 13px; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
 
-<h2>Research Interests</h2>
-<p>
-    I am interested in exploring how advanced AI systems, particularly multimodal large language models (MLLMs), can automate the process of code generation and graphical user interface (GUI) development (e.g., web development and game development).
+    /* ── LAYOUT ── */
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
 
+    section { padding: 64px 0 0; }
+    section:last-of-type { padding-bottom: 80px; }
 
-<h2>Selected Publications <small></small></h2>
-<ul>
-        <li>
-        Yuxuan Wan, C.Wang, Y.Dong, W.Wang, S.Li, Y.Huo, Michael R. Lyu. <br>
-        <a href="https://arxiv.org/abs/2406.16386">Automatically Generating UI Code from Screenshot: A Divide-and-Conquer-Based Approach.</a>. <br>
-        <i>FSE 2025: The ACM International Conference on the Foundations of Software Engineering</i>
-    </li>
-    <li>
-        Yuxuan Wan, Yi Dong, Jingyu Xiao, Yintong Huo, Wenxuan Wang, Michael R. Lyu. <br>
-        <a href="https://arxiv.org/abs/2412.15310">MRWeb: An Exploration of Generating Multi-Page Resource-Aware Web Code from UI Designs</a>. <br>
-        <i>Preprint  </i>
-    </li>
-    <li>
-        Yuxuan Wan*, Wenxuan Wang*, Pinjia He, Jiazhen Gu, Haonan Bai and Michael R. Lyu. <br>
-        <a href="https://arxiv.org/abs/2305.12434">BiasAsker: Measuring the Bias in Conversational AI System</a>. <br>
-        <i>FSE 2023: The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering.  </i>
-    </li>
-    <li>
-        Yuxuan Wan*, Wenxuan Wang*, Wenxiang Jiao, Yiliu Yang, Youliang Yuan, Jen-tse Huang, Pinjia He and Michael R. Lyu. <br>
-        <a href="https://arxiv.org/abs/2401.00757">LogicAsker: Evaluating and improving the logical reasoning ability of large language models</a>. <br>
-        <i>EMNLP 2024: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing  </i>
-    </li>
-     
-</ul>
+    h2.section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 28px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2.section-title .icon { font-size: 18px; }
 
+    /* ── HERO ── */
+    #hero { padding-top: 72px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-photo {
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      box-shadow: 0 0 0 6px rgba(88,166,255,.12);
+    }
+    .hero-name {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -.5px;
+      line-height: 1.1;
+    }
+    .hero-sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .hero-affil {
+      margin-top: 4px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .tag {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .tag.blue  { border-color: rgba(88,166,255,.4); color: var(--accent); background: rgba(88,166,255,.08); }
+    .tag.purple{ border-color: rgba(188,140,255,.4); color: var(--accent2); background: rgba(188,140,255,.08); }
+    .tag.green { border-color: rgba(63,185,80,.4);  color: var(--green);  background: rgba(63,185,80,.08); }
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      color: var(--text);
+      transition: border-color .2s, background .2s;
+    }
+    .btn:hover { border-color: var(--accent); background: rgba(88,166,255,.08); text-decoration: none; }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #0d1117; }
+    .btn-primary:hover { background: #79b8ff; border-color: #79b8ff; }
 
+    /* ── STATS BAR ── */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-top: 40px;
+    }
+    .stat {
+      background: var(--bg2);
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-label {
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--muted);
+    }
 
+    /* ── CARD ── */
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      transition: border-color .2s;
+    }
+    .card:hover { border-color: #444c56; }
 
+    /* ── ABOUT ── */
+    #about p { color: var(--muted); line-height: 1.8; }
+    #about p + p { margin-top: 12px; }
+    .highlight { color: var(--text); }
 
-<div id="footer">
-    <div id="footer-text"></div>
+    /* ── EXPERIENCE ── */
+    .exp-list { display: flex; flex-direction: column; gap: 16px; }
+    .exp-card { display: grid; grid-template-columns: auto 1fr; gap: 18px; }
+    .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 4px; }
+    .exp-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg2);
+      box-shadow: 0 0 0 3px rgba(88,166,255,.25);
+      flex-shrink: 0;
+    }
+    .exp-dot.game { background: var(--accent2); box-shadow: 0 0 0 3px rgba(188,140,255,.25); }
+    .exp-line { flex: 1; width: 1px; background: var(--border); margin-top: 4px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 4px; }
+    .exp-title { font-weight: 700; font-size: 15px; }
+    .exp-company { color: var(--muted); font-size: 13px; margin-top: 1px; }
+    .exp-date { color: var(--muted); font-size: 12px; white-space: nowrap; }
+    .exp-desc { margin-top: 10px; color: var(--muted); font-size: 14px; }
+    .exp-desc ul { padding-left: 16px; margin-top: 6px; }
+    .exp-desc li { margin-top: 4px; }
+    .exp-badge {
+      display: inline-block;
+      margin-top: 8px;
+      background: rgba(63,185,80,.12);
+      border: 1px solid rgba(63,185,80,.3);
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: 12px;
+      color: var(--green);
+    }
+    .exp-badge.purple {
+      background: rgba(188,140,255,.12);
+      border-color: rgba(188,140,255,.3);
+      color: var(--accent2);
+    }
+
+    /* ── PUBLICATIONS ── */
+    .pub-list { display: flex; flex-direction: column; gap: 14px; }
+    .pub-card { padding: 18px 20px; }
+    .pub-venue {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+    .venue-fse    { background: rgba(88,166,255,.15); color: var(--accent); border: 1px solid rgba(88,166,255,.3); }
+    .venue-emnlp  { background: rgba(63,185,80,.15);  color: var(--green);  border: 1px solid rgba(63,185,80,.3); }
+    .venue-pre    { background: rgba(188,140,255,.15); color: var(--accent2); border: 1px solid rgba(188,140,255,.3); }
+    .pub-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .pub-title a { color: var(--text); }
+    .pub-title a:hover { color: var(--accent); text-decoration: none; }
+    .pub-authors { margin-top: 5px; font-size: 13px; color: var(--muted); }
+    .pub-authors .me { color: var(--text); font-weight: 500; }
+    .pub-links { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .pub-link {
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      transition: color .2s, border-color .2s;
+    }
+    .pub-link:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+    .pub-stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: #e3b341;
+      margin-left: 6px;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-list { display: flex; flex-direction: column; gap: 12px; }
+    .edu-card { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; }
+    .edu-school { font-weight: 700; font-size: 15px; }
+    .edu-deg { color: var(--muted); font-size: 13px; margin-top: 2px; }
+    .edu-detail { color: var(--accent); font-size: 13px; margin-top: 2px; }
+    .edu-date { color: var(--muted); font-size: 12px; white-space: nowrap; }
+
+    /* ── AWARDS ── */
+    .award-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .award-card { padding: 14px 18px; }
+    .award-name { font-size: 14px; font-weight: 600; }
+    .award-detail { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+    /* ── HIGHLIGHTS ── */
+    .hl-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 14px;
+    }
+    .hl-card {
+      padding: 20px 22px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .hl-icon { font-size: 26px; line-height: 1; flex-shrink: 0; }
+    .hl-title { font-weight: 700; font-size: 14px; }
+    .hl-desc { color: var(--muted); font-size: 13px; margin-top: 3px; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-photo { width: 100px; height: 100px; }
+      .stats-bar { grid-template-columns: 1fr; }
+      .hero-name { font-size: 28px; }
+      nav { padding: 0 16px; }
+      .nav-links { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Yuxuan Wan</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#awards">Awards</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-name">Yuxuan Wan</div>
+        <div class="hero-sub">Ph.D. Student · ARISE Lab, CUHK &nbsp;|&nbsp; Intern @ Tencent Game AI</div>
+        <div class="hero-affil">Department of Computer Science and Engineering · Hong Kong</div>
+        <div class="hero-tags">
+          <span class="tag blue">Coding Agents</span>
+          <span class="tag blue">Deep Research Agents</span>
+          <span class="tag blue">Multimodal LLMs</span>
+          <span class="tag purple">Game AI</span>
+          <span class="tag purple">UI/Code Generation</span>
+          <span class="tag green">Multi-Agent Systems</span>
+        </div>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="https://yxwan123.github.io/asset/cv_yxwan_new.pdf" target="_blank">
+            📄 Curriculum Vitae
+          </a>
+          <a class="btn" href="https://scholar.google.com/citations?user=gnJLyQcAAAAJ&hl=en" target="_blank">
+            🎓 Google Scholar
+          </a>
+          <a class="btn" href="https://github.com/leigest519/ScreenCoder" target="_blank">
+            💻 GitHub
+          </a>
+          <a class="btn" href="mailto:yxwan@link.cuhk.edu.hk">
+            ✉️ Email
+          </a>
+        </div>
+      </div>
+      <div>
+        <img class="hero-photo" src="./asset/photo.jpg" alt="Yuxuan Wan">
+      </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-num">2.5K+</div>
+        <div class="stat-label">GitHub Stars (ScreenCoder)</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Google Scholar Citations</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Publications (FSE · EMNLP)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title"><span class="icon">👤</span> About</h2>
+    <div class="card">
+      <p>
+        I am a third-year Ph.D. student at the <span class="highlight">ARISE Lab</span>, Department of Computer Science and Engineering,
+        <span class="highlight">The Chinese University of Hong Kong (CUHK)</span>, advised by
+        <a href="https://www.cse.cuhk.edu.hk/lyu/home">Prof. Michael R. Lyu</a>.
+        I received my B.Eng. (First Class Honours, AI: Systems and Technologies) from CUHK in 2023.
+      </p>
+      <p>
+        My research focuses on <span class="highlight">LLM coding agents</span> and <span class="highlight">deep research agents</span>,
+        with emphasis on multi-agent collaboration, context engineering, scaffolding, and post-training.
+        I am particularly passionate about leveraging multimodal LLMs to automate
+        <span class="highlight">UI/web code generation</span> and <span class="highlight">intelligent game development</span>.
+      </p>
+      <p>
+        I am currently interning at <span class="highlight">Tencent Game AI Center</span>, building LLM agent-driven game development systems.
+        Previously I interned at <span class="highlight">Tencent AI Lab</span>, where I developed a self-improving deep research agent
+        that improved performance by <span class="highlight">6%</span>.
+      </p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2 class="section-title"><span class="icon">💼</span> Experience</h2>
+    <div class="exp-list">
+
+      <!-- Tencent Game -->
+      <div class="exp-card">
+        <div class="exp-dot-col">
+          <div class="exp-dot game"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="card" style="flex:1">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Research Intern — Game AI</div>
+              <div class="exp-company">Tencent Game · Game AI Center · Shenzhen</div>
+            </div>
+            <div class="exp-date">Jan 2026 – Present</div>
+          </div>
+          <div class="exp-desc">
+            Developing an LLM Agent-driven intelligent assistant for game development. Core contributions:
+            <ul>
+              <li>Agent pipeline design, information retrieval, and memory management for game creation workflows</li>
+              <li>Cross-discipline collaboration with game designers, artists, and engineers</li>
+            </ul>
+            <span class="exp-badge purple">🎮 Game Industry</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tencent AI Lab -->
+      <div class="exp-card">
+        <div class="exp-dot-col">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="card" style="flex:1">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Research Intern — Deep Research Agent</div>
+              <div class="exp-company">Tencent AI Lab · Shenzhen</div>
+            </div>
+            <div class="exp-date">May 2025 – Jan 2026</div>
+          </div>
+          <div class="exp-desc">
+            Proposed a paradigm where a deep research agent self-improves by evaluating generated answers at inference time.
+            <ul>
+              <li>Designed and developed <em>reflection</em> and <em>voting</em> modules for the Cognitive-Pro Deep Research Agent</li>
+              <li>Achieved <strong>+6% performance improvement</strong> on research agent benchmarks</li>
+              <li>Co-authored technical report (<a href="https://arxiv.org/pdf/2508.00414" target="_blank">arXiv</a>) and published paper (<a href="https://arxiv.org/abs/2601.15808" target="_blank">arXiv 2601.15808</a>)</li>
+            </ul>
+            <span class="exp-badge">🤖 AI Research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Qleap -->
+      <div class="exp-card">
+        <div class="exp-dot-col">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="card" style="flex:1">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Intern — Computer Vision & Algorithm</div>
+              <div class="exp-company">Qleap Business Solutions Ltd · Hong Kong</div>
+            </div>
+            <div class="exp-date">Sep – Nov 2021</div>
+          </div>
+          <div class="exp-desc">
+            Designed and implemented a camera-based motion analysis algorithm to quantify patient movement in stroke recovery exercises,
+            integrated into an interactive rehabilitation game.
+            <span class="exp-badge purple">🎮 Game × Health</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resident Tutor -->
+      <div class="exp-card">
+        <div class="exp-dot-col">
+          <div class="exp-dot" style="background:var(--muted)"></div>
+        </div>
+        <div class="card" style="flex:1">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Resident Tutor</div>
+              <div class="exp-company">C.W.Chu College, CUHK · Hong Kong</div>
+            </div>
+            <div class="exp-date">Aug 2023 – Jan 2025</div>
+          </div>
+          <div class="exp-desc">Organized student activities, handled emergencies, and provided pastoral support for college residents.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <h2 class="section-title"><span class="icon">📝</span> Selected Publications</h2>
+    <div class="pub-list">
+
+      <div class="card pub-card">
+        <div>
+          <span class="pub-venue venue-pre">Preprint 2026</span>
+        </div>
+        <div class="pub-title">
+          <a href="https://arxiv.org/abs/2601.15808" target="_blank">
+            Inference-Time Scaling of Verification: Self-Evolving Deep Research Agents via Test-Time Rubric-Guided Verification
+          </a>
+        </div>
+        <div class="pub-authors">
+          <span class="me">Yuxuan Wan</span> et al.
+        </div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://arxiv.org/abs/2601.15808" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <div class="card pub-card">
+        <div>
+          <span class="pub-venue venue-pre">Preprint 2026</span>
+          <span class="pub-stars">★ 2.5K+ stars</span>
+        </div>
+        <div class="pub-title">
+          <a href="https://arxiv.org/abs/2507.22827" target="_blank">
+            ScreenCoder: Advancing Visual-to-Code Generation for Front-End Automation via Modular Multimodal Agents
+          </a>
+        </div>
+        <div class="pub-authors">
+          <span class="me">Yuxuan Wan</span> et al.
+        </div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://arxiv.org/abs/2507.22827" target="_blank">arXiv</a>
+          <a class="pub-link" href="https://github.com/leigest519/ScreenCoder" target="_blank">GitHub ★2.5K</a>
+        </div>
+      </div>
+
+      <div class="card pub-card">
+        <div>
+          <span class="pub-venue venue-pre">Preprint 2026</span>
+        </div>
+        <div class="pub-title">
+          <a href="https://arxiv.org/abs/2509.25297" target="_blank">
+            Automatically Generating Web Applications from Requirements Via Multi-Agent Test-Driven Development
+          </a>
+        </div>
+        <div class="pub-authors">
+          <span class="me">Yuxuan Wan</span> et al.
+        </div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://arxiv.org/abs/2509.25297" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <div class="card pub-card">
+        <div>
+          <span class="pub-venue venue-fse">FSE 2025</span>
+        </div>
+        <div class="pub-title">
+          <a href="https://dl.acm.org/doi/abs/10.1145/3729364" target="_blank">
+            Automatically Generating UI Code from Screenshot: A Divide-and-Conquer-Based Approach
+          </a>
+        </div>
+        <div class="pub-authors">
+          <span class="me">Yuxuan Wan</span>, C. Wang, Y. Dong, W. Wang, S. Li, Y. Huo, Michael R. Lyu
+        </div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://dl.acm.org/doi/abs/10.1145/3729364" target="_blank">ACM DL</a>
+          <a class="pub-link" href="https://arxiv.org/abs/2406.16386" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <div class="card pub-card">
+        <div>
+          <span class="pub-venue venue-emnlp">EMNLP 2024</span>
+        </div>
+        <div class="pub-title">
+          <a href="https://arxiv.org/abs/2401.00757" target="_blank">
+            LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models
+          </a>
+        </div>
+        <div class="pub-authors">
+          <span class="me">Yuxuan Wan</span>*, Wenxuan Wang*, Wenxiang Jiao, Yiliu Yang, Youliang Yuan, Jen-tse Huang, Pinjia He, Michael R. Lyu
+        </div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://arxiv.org/abs/2401.00757" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+      <div class="card pub-card">
+        <div>
+          <span class="pub-venue venue-fse">FSE 2023</span>
+        </div>
+        <div class="pub-title">
+          <a href="https://dl.acm.org/doi/abs/10.1145/3611643.3616310" target="_blank">
+            BiasAsker: Measuring the Bias in Conversational AI System
+          </a>
+        </div>
+        <div class="pub-authors">
+          <span class="me">Yuxuan Wan</span>*, Wenxuan Wang*, Pinjia He, Jiazhen Gu, Haonan Bai, Michael R. Lyu
+        </div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://dl.acm.org/doi/abs/10.1145/3611643.3616310" target="_blank">ACM DL</a>
+          <a class="pub-link" href="https://arxiv.org/abs/2305.12434" target="_blank">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="section-title"><span class="icon">🎓</span> Education</h2>
+    <div class="edu-list">
+
+      <div class="card">
+        <div class="edu-card">
+          <div>
+            <div class="edu-school">The Chinese University of Hong Kong (CUHK)</div>
+            <div class="edu-deg">Ph.D. in Computer Science and Engineering</div>
+            <div class="edu-deg">Supervisor: <a href="https://www.cse.cuhk.edu.hk/lyu/home">Prof. Michael R. Lyu</a> · ARISE Lab</div>
+            <div class="edu-detail">Research: LLM agent systems for visual content generation (UIs &amp; games)</div>
+          </div>
+          <div class="edu-date">2023 – 2027 (Expected)</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="edu-card">
+          <div>
+            <div class="edu-school">The Chinese University of Hong Kong (CUHK)</div>
+            <div class="edu-deg">B.Eng. in Artificial Intelligence: Systems and Technologies — <strong>First Class Honours</strong></div>
+            <div class="edu-detail">Major GPA: 3.82 / 4.0 &nbsp;·&nbsp; Cumulative GPA: 3.76 / 4.0</div>
+          </div>
+          <div class="edu-date">2019 – 2023</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="edu-card">
+          <div>
+            <div class="edu-school">University of California, Davis</div>
+            <div class="edu-deg">Visiting Scholar — Advisor: Prof. Shiqing Ma</div>
+            <div class="edu-detail">Project: Projection Robust Wasserstein distance in optimal transport</div>
+          </div>
+          <div class="edu-date">May – Jul 2022</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="highlights">
+    <h2 class="section-title"><span class="icon">✨</span> Highlights</h2>
+    <div class="hl-grid">
+      <div class="card hl-card">
+        <div class="hl-icon">⭐</div>
+        <div>
+          <div class="hl-title">2.5K GitHub Stars</div>
+          <div class="hl-desc">ScreenCoder — open-source visual-to-code generation agent with strong community adoption</div>
+        </div>
+      </div>
+      <div class="card hl-card">
+        <div class="hl-icon">📊</div>
+        <div>
+          <div class="hl-title">500+ Citations</div>
+          <div class="hl-desc">Google Scholar citations across publications in FSE, EMNLP, and arXiv (as of Feb 2026)</div>
+        </div>
+      </div>
+      <div class="card hl-card">
+        <div class="hl-icon">🎮</div>
+        <div>
+          <div class="hl-title">Global Game Jam 2026</div>
+          <div class="hl-desc">Built a playable 3D horror game in 40 hours at Global Game Jam Hong Kong 2026</div>
+        </div>
+      </div>
+      <div class="card hl-card">
+        <div class="hl-icon">🔬</div>
+        <div>
+          <div class="hl-title">Research @ ARISE Lab</div>
+          <div class="hl-desc">Advancing coding agents and multimodal LLMs for automated UI and game development</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <h2 class="section-title"><span class="icon">🏆</span> Scholarships &amp; Awards</h2>
+    <div class="award-grid">
+      <div class="card award-card">
+        <div class="award-name">Dean's List (Top 10%)</div>
+        <div class="award-detail">Faculty of Engineering, CUHK · 2021, 2022, 2023</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">Prof. Charles K. Kao Research Exchange Scholarship</div>
+        <div class="award-detail">HK$50,000 · 2022</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">Germaine She Wong Scholarship</div>
+        <div class="award-detail">HK$10,000 · 2023</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">Outstanding Academic Performance Award</div>
+        <div class="award-detail">HK$10,000 · 2022</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">Liu Shai-Tat &amp; Yu Chi-Hing Memorial Scholarship</div>
+        <div class="award-detail">HK$10,000 · 2022</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">Reaching Out Award</div>
+        <div class="award-detail">HK$10,000 · 2022</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">ELITE Stream Scholarship</div>
+        <div class="award-detail">HK$10,000 · 2021</div>
+      </div>
+      <div class="card award-card">
+        <div class="award-name">Samson Leung Scholarship</div>
+        <div class="award-detail">HK$10,000 · 2021</div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
-</div>
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="mailto:yxwan@link.cuhk.edu.hk">yxwan@link.cuhk.edu.hk</a>
+    &nbsp;·&nbsp;
+    <a href="https://scholar.google.com/citations?user=gnJLyQcAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    &nbsp;·&nbsp;
+    <a href="https://yxwan123.github.io/asset/cv_yxwan_new.pdf" target="_blank">CV</a>
+  </div>
+  <div style="margin-top:8px">© 2026 Yuxuan Wan · ARISE Lab, CUHK</div>
+</footer>
 
-Last updated on Jan, 2025.
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+</body>
+</html>
