@@ -147,7 +147,7 @@
     /* ── STATS BAR ── */
     .stats-bar {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
@@ -320,7 +320,8 @@
     @media (max-width: 600px) {
       .hero-grid { grid-template-columns: 1fr; }
       .hero-photo { width: 100px; height: 100px; }
-      .stats-bar { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: 1fr 1fr; }
+      .stats-bar a.stat:last-child { grid-column: span 2; }
       .hero-name { font-size: 28px; }
       nav { padding: 0 16px; }
       .nav-links { gap: 14px; }
@@ -348,7 +349,7 @@
     <div class="hero-grid">
       <div>
         <div class="hero-name">Yuxuan Wan</div>
-        <div class="hero-sub">Ph.D. Student · ARISE Lab, CUHK &nbsp;|&nbsp; Intern @ Tencent Game AI</div>
+        <div class="hero-sub">Ph.D. Student · ARISE Lab, CUHK</div>
         <div class="hero-affil">Department of Computer Science and Engineering · Hong Kong</div>
         <div class="hero-tags">
           <span class="tag blue">Coding Agents</span>
@@ -387,6 +388,10 @@
       <a class="stat" href="https://scholar.google.com/citations?user=gnJLyQcAAAAJ&hl=en" target="_blank" style="text-decoration:none">
         <div class="stat-num" id="scholar-citations">500+</div>
         <div class="stat-label">📚 Google Scholar Citations</div>
+      </a>
+      <a class="stat" href="https://globalgamejam.org/games/2026/inreality-0" target="_blank" style="text-decoration:none">
+        <div class="stat-num">40h</div>
+        <div class="stat-label">🎮 Global Game Jam 2026 · InReality</div>
       </a>
     </div>
   </section>
@@ -471,29 +476,7 @@
         </div>
       </div>
 
-      <!-- Qleap -->
-      <div class="exp-card">
-        <div class="exp-dot-col">
-          <div class="exp-dot"></div>
-          <div class="exp-line"></div>
-        </div>
-        <div class="card" style="flex:1">
-          <div class="exp-header">
-            <div>
-              <div class="exp-title">Intern — Computer Vision & Algorithm</div>
-              <div class="exp-company">Qleap Business Solutions Ltd · Hong Kong</div>
-            </div>
-            <div class="exp-date">Sep – Nov 2021</div>
-          </div>
-          <div class="exp-desc">
-            Designed and implemented a camera-based motion analysis algorithm to quantify patient movement in stroke recovery exercises,
-            integrated into an interactive rehabilitation game.
-            <span class="exp-badge purple">🎮 Game × Health</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Resident Tutor -->
+<!-- Resident Tutor -->
       <div class="exp-card">
         <div class="exp-dot-col">
           <div class="exp-dot" style="background:var(--muted)"></div>
